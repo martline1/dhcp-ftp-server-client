@@ -1,0 +1,24 @@
+{
+  "name": "network-systems",
+  "version": "1.0.0",
+  "description": "Mono repo para la materia de Sistemas y Redes, contiene un servidor DHCP, FTP y un cliente para ambos",
+  "main": "index.ts",
+  "repository": "git@github.com:martline1/dhcp-ftp-server-client.git",
+  "author": "Alcalá León Yael Mártin Alejandro <yael.alcalla@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "ts-node-dev --respawn --watch src ./src/index.ts",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "dhcp": "^0.2.20",
+    "ftp-srv": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.3"
+  }
+}
